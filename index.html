@@ -2,21 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to my crib </title>
-    <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assim | Backend Dev & Traveller</title>
+  <style>
     body {
-      display: flex;
-      justify-content: center;  /* Center horizontally */
-      align-items: center;      /* Center vertically */
-      height: 100vh;            /* Full viewport height */
-      margin: 0;                /* Remove default margin */
-      background-color: #f0f0f0;
+      background-color: #000;
+      color: #00ff99;
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      border: 2px solid #00ff99;
+      padding: 20px;
+      background-color: #111;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #ff66cc;
+      border-bottom: 1px dashed #ff66cc;
+      padding-bottom: 4px;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff66cc;
+      text-decoration: underline;
+    }
+
+    .retro-divider {
+      border: 0;
+      border-top: 1px dotted #00ff99;
+      margin: 20px 0;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #999;
+      margin-top: 30px;
+    }
+
+    .blink {
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <br>
-  <img src="image.gif" alt="image" width="600">
+  <div class="container">
+    <h1>~ Assim ~</h1>
+    <p style="text-align:center;">Backend Developer & World Traveller <span class="blink">_</span></p>
+    <hr class="retro-divider">
 
+    <div class="section">
+      <h2>💻 About Me</h2>
+      <p>
+        Hey there! I'm <strong>Assim</strong>, a backend developer who loves building efficient, scalable systems.
+        When I’m not coding APIs or optimizing databases, I’m usually out exploring new places and cultures.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Tech Stack</h2>
+      <ul>
+        <li>Languages: Python, Go, JavaScript (Node.js)</li>
+        <li>Frameworks: FastAPI, Express.js, Django</li>
+        <li>Databases: PostgreSQL, MongoDB, Redis</li>
+        <li>Cloud & Tools: Docker, AWS, CI/CD pipelines</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🌍 Travel Log</h2>
+      <p>
+        I’ve been to over 15 countries so far — from the deserts of Morocco to the mountains of Nepal.
+        Traveling gives me fresh perspectives that inspire my work and creativity.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📬 Contact</h2>
+      <p>
+        <a href="mailto:assim@example.com">assim@example.com</a><br>
+        <a href="https://github.com/assimdev" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/assim" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <footer>
+      <hr class="retro-divider">
+      <p>© 2025 Assim — Hand-coded in pure HTML & CSS 🕹️</p>
+    </footer>
+  </div>
 </body>
 </html>
