@@ -1,122 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assim | Backend Dev & Traveller</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #00ff99;
-      font-family: "Courier New", monospace;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assim’s Retro 2000s Zone</title>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #d4d9ff 0%, #f0f3ff 100%);
+    font-family: "Tahoma", "Verdana", sans-serif;
+    color: #002b80;
+  }
 
-    .container {
-      width: 80%;
-      max-width: 900px;
-      margin: 40px auto;
-      border: 2px solid #00ff99;
-      padding: 20px;
-      background-color: #111;
-      box-shadow: 0 0 15px #00ff99;
-    }
+  /* HEADER */
+  .header {
+    background: linear-gradient(to bottom, #3366cc 0%, #003366 100%);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 3px solid #001a66;
+    text-shadow: 1px 1px 3px #000;
+  }
 
-    h1 {
-      text-align: center;
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffff;
-      margin-bottom: 5px;
-    }
+  .header img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-    h2 {
-      color: #ff66cc;
-      border-bottom: 1px dashed #ff66cc;
-      padding-bottom: 4px;
-    }
+  /* NAVBAR */
+  .navbar {
+    background: #e0e8ff;
+    border-bottom: 1px solid #99b3ff;
+    text-align: center;
+    padding: 8px 0;
+  }
 
-    a {
-      color: #00ffff;
-      text-decoration: none;
-    }
+  .navbar a {
+    color: #003399;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+  }
 
-    a:hover {
-      color: #ff66cc;
-      text-decoration: underline;
-    }
+  .navbar a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+  }
 
-    .retro-divider {
-      border: 0;
-      border-top: 1px dotted #00ff99;
-      margin: 20px 0;
-    }
+  /* MAIN CONTENT */
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 2px solid #99b3ff;
+    box-shadow: 0 0 10px rgba(0,0,80,0.2);
+    padding: 20px;
+  }
 
-    .section {
-      margin-bottom: 20px;
-    }
+  h2 {
+    color: #003399;
+    border-bottom: 1px solid #99b3ff;
+    padding-bottom: 4px;
+  }
 
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #999;
-      margin-top: 30px;
-    }
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
 
-    .blink {
-      animation: blink 1s step-start infinite;
-    }
+  a {
+    color: #003399;
+  }
 
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-  </style>
+  a:hover {
+    color: #0000ff;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    float: right;
+    width: 25%;
+    background: #f0f6ff;
+    border: 1px solid #99b3ff;
+    padding: 10px;
+    margin-left: 20px;
+  }
+
+  .sidebar h3 {
+    margin-top: 0;
+    color: #003399;
+    border-bottom: 1px dashed #99b3ff;
+  }
+
+  .sidebar img {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* FOOTER */
+  footer {
+    clear: both;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    color: #003366;
+    background: linear-gradient(to top, #ccd9ff, #ffffff);
+    border-top: 2px solid #99b3ff;
+  }
+
+  .blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>~ Assim ~</h1>
-    <p style="text-align:center;">Backend Developer & World Traveller <span class="blink">_</span></p>
-    <hr class="retro-divider">
 
-    <div class="section">
-      <h2>💻 About Me</h2>
-      <p>
-        Hey there! I'm <strong>Assim</strong>, a backend developer who loves building efficient, scalable systems.
-        When I’m not coding APIs or optimizing databases, I’m usually out exploring new places and cultures.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>⚙️ Tech Stack</h2>
-      <ul>
-        <li>Languages: Python, Go, JavaScript (Node.js)</li>
-        <li>Frameworks: FastAPI, Express.js, Django</li>
-        <li>Databases: PostgreSQL, MongoDB, Redis</li>
-        <li>Cloud & Tools: Docker, AWS, CI/CD pipelines</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🌍 Travel Log</h2>
-      <p>
-        I’ve been to over 15 countries so far — from the deserts of Morocco to the mountains of Nepal.
-        Traveling gives me fresh perspectives that inspire my work and creativity.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>📬 Contact</h2>
-      <p>
-        <a href="mailto:assim@example.com">assim@example.com</a><br>
-        <a href="https://github.com/assimdev" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/assim" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-
-    <footer>
-      <hr class="retro-divider">
-      <p>© 2025 Assim — Hand-coded in pure HTML & CSS 🕹️</p>
-    </footer>
+  <div class="header">
+    <img src="https://i.imgur.com/Z3E7vWy.gif" width="48" alt="Logo">
+    <span style="font-size:26px; font-weight:bold;">Welcome</span><br>
+    <span style="font-size:14px;">Backend Developer & Backpack Traveller</span>
   </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Travel Log</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="https://github.com/assim2351" target="_blank">GitHub</a></li>
+        <li><a href="mailto:assim@example.com">Email Me</a></li>
+      </ul>
+      <img src="https://www.animatedimages.org/data/media/56/animated-mail-image-0013.gif" alt="Mail" width="60">
+      <p style="font-size:11px; text-align:center;">Always on the move 💼✈️</p>
+    </div>
+
+    <h2>Welcome!</h2>
+    <p>Hey there 👋 I’m <b>Assim</b> — a <b>backend developer</b> who codes while backpacking across the world.  
+       I love building reliable, scalable systems and exploring new places with just a laptop and curiosity.</p>
+
+    <h2>💻 My Tech Stack</h2>
+    <ul>
+      <li>PHP, Node.js</li>
+      <li>Javscript</li>
+      <li>PostgreSQL, MongoDB, Redis</li>
+      <li>Docker, AWS, CI/CD</li>
+    </ul>
+
+    <h2>🌍 Backpack Life</h2>
+    <p>
+      Since 2019, I’ve been travelling light — living, working, and coding from anywhere.  
+    </p>
+    <ul>
+      <li>Favorite spots: Hambi</li>
+    </ul>
+
+    <h2>📬 Get in Touch</h2>
+    <p>
+      📧 <a href="mailto:assim@example.com">assim2351@gmail.com.com</a><br>
+      💻 <a href="https://github.com/assim2351" target="_blank">https://github.com/assim2351</a><br>
+    </p>
+  </div>
+
+  <footer>
+    <p><span class="blink">★</span> © 2000–2025 Assim <br>
+    Best viewed in Internet Explorer 6.0 at 1024×768 resolution 😎</p>
+  </footer>
+
 </body>
 </html>
