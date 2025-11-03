@@ -1,181 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assim’s Retro 2000s Zone</title>
-<style>
-  body {
-    margin: 0;
-    background: linear-gradient(to bottom, #d4d9ff 0%, #f0f3ff 100%);
-    font-family: "Tahoma", "Verdana", sans-serif;
-    color: #002b80;
-  }
-
-  /* HEADER */
-  .header {
-    background: linear-gradient(to bottom, #3366cc 0%, #003366 100%);
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    border-bottom: 3px solid #001a66;
-    text-shadow: 1px 1px 3px #000;
-  }
-
-  .header img {
-    vertical-align: middle;
-    margin-right: 8px;
-  }
-
-  /* NAVBAR */
-  .navbar {
-    background: #e0e8ff;
-    border-bottom: 1px solid #99b3ff;
-    text-align: center;
-    padding: 8px 0;
-  }
-
-  .navbar a {
-    color: #003399;
-    font-weight: bold;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-
-  .navbar a:hover {
-    color: #0000ff;
-    text-decoration: underline;
-  }
-
-  /* MAIN CONTENT */
-  .container {
-    width: 80%;
-    max-width: 900px;
-    margin: 20px auto;
-    background: #ffffff;
-    border: 2px solid #99b3ff;
-    box-shadow: 0 0 10px rgba(0,0,80,0.2);
-    padding: 20px;
-  }
-
-  h2 {
-    color: #003399;
-    border-bottom: 1px solid #99b3ff;
-    padding-bottom: 4px;
-  }
-
-  ul {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-
-  a {
-    color: #003399;
-  }
-
-  a:hover {
-    color: #0000ff;
-  }
-
-  /* SIDEBAR */
-  .sidebar {
-    float: right;
-    width: 25%;
-    background: #f0f6ff;
-    border: 1px solid #99b3ff;
-    padding: 10px;
-    margin-left: 20px;
-  }
-
-  .sidebar h3 {
-    margin-top: 0;
-    color: #003399;
-    border-bottom: 1px dashed #99b3ff;
-  }
-
-  .sidebar img {
-    display: block;
-    margin: 10px auto;
-  }
-
-  /* FOOTER */
-  footer {
-    clear: both;
-    text-align: center;
-    padding: 12px;
-    font-size: 12px;
-    color: #003366;
-    background: linear-gradient(to top, #ccd9ff, #ffffff);
-    border-top: 2px solid #99b3ff;
-  }
-
-  .blink {
-    animation: blink 1s step-start infinite;
-  }
-
-  @keyframes blink {
-    50% { opacity: 0; }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name] — Code. Explore. Ride.</title>
+  <style>
+    body {
+      background-color: #000022;
+      color: #00ffcc;
+      font-family: "Courier New", monospace;
+      background-image: linear-gradient(180deg, #000022, #001133);
+      margin: 0;
+      padding: 0;
+    }
+    a { color: #66ffff; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #ffcc00; }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      border: 2px dashed #00ffcc;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    h1, h2 {
+      color: #ffcc00;
+      text-shadow: 2px 2px #003333;
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #00ffcc;
+      margin: 20px 0;
+    }
+    .nav {
+      text-align: center;
+      background-color: #001144;
+      border-bottom: 3px groove #00ffcc;
+      padding: 10px 0;
+    }
+    .nav a {
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      border-top: 2px solid #00ffcc;
+      font-size: 0.9em;
+    }
+    .blink {
+      animation: blinker 1.2s linear infinite;
+    }
+    @keyframes blinker {
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
-
-  <div class="header">
-    <img src="https://i.imgur.com/Z3E7vWy.gif" width="48" alt="Logo">
-    <span style="font-size:26px; font-weight:bold;">Welcome</span><br>
-    <span style="font-size:14px;">Backend Developer & Backpack Traveller</span>
+  <div class="nav">
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#rides">Rides</a> |
+    <a href="#journal">Journal</a> |
+    <a href="#contact">Contact</a>
   </div>
 
-  <div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
-    <a href="#">Travel Log</a>
-    <a href="#">Contact</a>
+  <div class="container" id="home">
+    <h1>Hey there, I’m [Your Name] 👋</h1>
+    <p>
+      <b>Backend Developer.</b> Traveler. Motorcycle Enthusiast.<br />
+      By day I architect scalable backend systems.<br />
+      By night (and weekends) I chase open roads and untold stories.<br /><br />
+      <span class="blink">★ Welcome to my digital garage ★</span>
+    </p>
   </div>
 
-  <div class="container">
-    <div class="sidebar">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="https://github.com/assim2351" target="_blank">GitHub</a></li>
-        <li><a href="mailto:assim@example.com">Email Me</a></li>
-      </ul>
-      <img src="https://www.animatedimages.org/data/media/56/animated-mail-image-0013.gif" alt="Mail" width="60">
-      <p style="font-size:11px; text-align:center;">Always on the move 💼✈️</p>
-    </div>
-
-    <h2>Welcome!</h2>
-    <p>Hey there 👋 I’m <b>Assim</b> — a <b>backend developer</b> who codes while backpacking across the world.  
-       I love building reliable, scalable systems and exploring new places with just a laptop and curiosity.</p>
-
-    <h2>💻 My Tech Stack</h2>
-    <ul>
-      <li>PHP, Node.js</li>
-      <li>Javscript</li>
-      <li>PostgreSQL, MongoDB, Redis</li>
-      <li>Docker, AWS, CI/CD</li>
-    </ul>
-
-    <h2>🌍 Backpack Life</h2>
+  <div class="container" id="about">
+    <h2>About Me</h2>
     <p>
-      Since 2019, I’ve been travelling light — living, working, and coding from anywhere.  
+      I’ve always been curious about what happens <i>behind the scenes</i> — both in systems and in life.
+      That curiosity led me into backend development, where I build reliable, efficient systems that
+      quietly power great experiences.
+    </p>
+    <p>
+      When I’m not coding, you’ll find me on the road: riding through mountains,
+      following coastlines, or getting lost somewhere beautiful.
     </p>
     <ul>
-      <li>Favorite spots: Hambi</li>
+      <li><b>Languages:</b> Node.js, Python, Go</li>
+      <li><b>Tools:</b> Docker, PostgreSQL, AWS</li>
+      <li><b>Focus:</b> APIs, microservices, automation</li>
     </ul>
+  </div>
 
-    <h2>📬 Get in Touch</h2>
-    <p>
-      📧 <a href="mailto:assim@example.com">assim2351@gmail.com.com</a><br>
-      💻 <a href="https://github.com/assim2351" target="_blank">https://github.com/assim2351</a><br>
+  <div class="container" id="projects">
+    <h2>Work & Projects</h2>
+    <p><b>🧱 [Project Name]</b><br>
+      A high-performance REST API built with Node.js and PostgreSQL — handling thousands of requests seamlessly.
     </p>
+    <p><b>🌍 MotoJourney (Personal Project)</b><br>
+      A travel & ride journal app that lets motorcyclists map their trips and share their stories.
+    </p>
+    <p><b>🛠 Open Source</b><br>
+      Occasional contributor to backend tools and productivity scripts.<br>
+      <a href="https://github.com/yourhandle">→ Check my GitHub</a>
+    </p>
+  </div>
+
+  <div class="container" id="rides">
+    <h2>Travel & Rides</h2>
+    <p>
+      Some people collect souvenirs — I collect stories from the road.<br />
+      Whether it’s a solo mountain ride or a long coastal run,
+      every trip reminds me that freedom starts with an open throttle.
+    </p>
+    <ul>
+      <li>🏍 <b>Coastal Ride:</b> Goa → Mangalore — Sunrise, sea breeze, endless corners.</li>
+      <li>🏔 <b>Himalayan Trail:</b> 1200 km of adrenaline, cold mornings, and pure bliss.</li>
+      <li>🌄 <b>Weekend Escapes:</b> Tiny routes, big memories.</li>
+    </ul>
+    <p><i>Next Dream Route:</i> Southeast Asia loop — Vietnam, Laos, Thailand.</p>
+  </div>
+
+  <div class="container" id="journal">
+    <h2>Journal</h2>
+    <p>Stories and thoughts from behind the keyboard and beyond the map.</p>
+    <ul>
+      <li><b>Building Scalable APIs While Traveling Light</b></li>
+      <li><b>The Zen of Long Rides</b> — what motorcycles teach about patience and flow.</li>
+      <li><b>5 Backend Tools I Can’t Live Without</b></li>
+    </ul>
+    <p>
+      <i>"Sometimes I write about systems. Sometimes about roads. Either way — it’s about the journey."</i>
+    </p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>
+      Want to collaborate, chat about code, or plan a ride?<br />
+      Let’s connect:
+    </p>
+    <ul>
+      <li>📬 Email: <a href="mailto:your@email.com">your@email.com</a></li>
+      <li>💼 LinkedIn: <a href="https://linkedin.com/in/yourhandle">linkedin.com/in/yourhandle</a></li>
+      <li>🧑‍💻 GitHub: <a href="https://github.com/yourhandle">github.com/yourhandle</a></li>
+      <li>🏍 Instagram: <a href="https://instagram.com/yourhandle">instagram.com/yourhandle</a></li>
+    </ul>
   </div>
 
   <footer>
-    <p><span class="blink">★</span> © 2000–2025 Assim <br>
-    Best viewed in Internet Explorer 6.0 at 1024×768 resolution 😎</p>
+    <p>© 2025 [Your Name] | <span class="blink">Made with ❤️ and a bit of 2000s nostalgia</span></p>
   </footer>
-
 </body>
 </html>
