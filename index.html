@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>வணக்கம்</title>
+    <title>வணக்கம்.</title>
     <style>
         body {
             margin: 0;
@@ -11,22 +11,43 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
         }
+
         .container {
             text-align: center;
         }
+
         h1 {
             color: #2c3e50;
-            font-size: 3rem;
+            font-size: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Namaskar Pulse Animation */
+        .namaskar-icon {
+            display: inline-block;
+            font-size: 5rem;
+            animation: pulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>வணக்கம் 🙇</h1>
+        <h1>
+            <span class="namaskar-icon">🙏</span>
+            வணக்கம்.
+        </h1>
     </div>
 
 </body>
